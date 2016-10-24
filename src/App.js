@@ -1,28 +1,32 @@
 import React from 'react';
-import { Navbar, Grid } from 'react-bootstrap';
-import logo from './logo.svg';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar inverse fixedTop>
-        <Grid>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="/">React App</a>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-        </Grid>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="/">DevStaff</a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav>
+            <NavItem eventKey={1} href="#">Link 1</NavItem>
+            <NavItem eventKey={2} href="#">Link 2</NavItem>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to React</h2>
+      <div className="container">
+        <h3>All issues</h3>
+        <div classNameName="row">
+          <div classNameName="col-md-12">
+            test
+          </div>
+        </div>
       </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
     </div>
   );
 }
