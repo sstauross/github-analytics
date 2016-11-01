@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import './App.scss';
-import Issue from './components/Issue';
+import IssuesList from './components/IssuesList';
 
 function App() {
   return (
@@ -24,9 +24,7 @@ function App() {
         <h3>All issues</h3>
         <div className="row">
           <div className="col-md-12">
-            <Issue />
-            <Issue />
-            <Issue />
+            <IssuesList />
           </div>
         </div>
       </div>
